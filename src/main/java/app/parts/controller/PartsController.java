@@ -28,7 +28,7 @@ public class PartsController {
         modelAndView.addObject("partsList", parts);
         return modelAndView;
     }*/
-   //Додаємо подання по 10 записів на сторінку
+   
    @RequestMapping(value = "/", method = RequestMethod.GET)
    public ModelAndView allFilms(@RequestParam(defaultValue = "1") int page) {
        List<Part> parts = partService.allParts(page);
